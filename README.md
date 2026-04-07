@@ -1,4 +1,4 @@
-# Xquads Squads
+# Squads
 
 **As maiores mentes trabalhando para voce.**
 
@@ -26,7 +26,7 @@
 ### Opcao 1: Clonar este repositorio
 
 ```bash
-git clone https://github.com/ohmyjahh/xquads-squads.git
+git clone https://github.com/iconsoli/squads.git
 ```
 
 Copie a pasta para dentro do seu projeto aios-core:
@@ -35,11 +35,7 @@ Copie a pasta para dentro do seu projeto aios-core:
 cp -r xquads-squads/* seu-projeto/squads/
 ```
 
-### Opcao 2: Baixar o ZIP
-
-Acesse [xquads.vercel.app/xquads/downloads](https://xquads.vercel.app/xquads/downloads) e baixe o pacote completo.
-
-### Opcao 3: Instalar via AIOS Core
+### Opcao 2: Instalar via AIOS Core
 
 ```bash
 git clone https://github.com/SynkraAI/aios-core.git
@@ -67,10 +63,7 @@ squad-name/
 - Node.js 18+
 - Claude Code (Anthropic CLI)
 
-## Dashboard
-
-Veja todos os agentes, bios e especialidades em: [xquads.vercel.app/xquads](https://xquads.vercel.app/xquads)
 
 ---
 
-**Xquads by Synkra**
+**By Synkra**
