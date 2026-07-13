@@ -2,7 +2,7 @@
 
 **As maiores mentes trabalhando para voce.**
 
-12 squads de agentes IA especializados com workflows, tasks e configuracoes prontos para uso no Synkra AIOS.
+13 squads de agentes IA especializados com workflows, tasks e configuracoes prontos para uso no Synkra AIOS.
 
 ## Squads Disponiveis
 
@@ -13,6 +13,7 @@
 | C-Level Squad | 6 | Lideranca executiva (CEO, CTO, CMO, COO, CIO, CAIO) |
 | Claude Code Mastery | 8 | Dominio do Claude Code e AIOS |
 | Copy Squad | 23 | Copywriting (Gary Halbert, Eugene Schwartz, David Ogilvy...) |
+| Copy Master | 33 | Copywriting de elite v2.0 (32 mestres + 1 orquestrador, com Chris Voss, Robert Cialdini, Alex Hormozi...) |
 | Cybersecurity | 15 | Seguranca ofensiva e defensiva |
 | Data Squad | 7 | Analytics, growth e comunidade (Sean Ellis, Avinash Kaushik...) |
 | Design Squad | 8 | UX/UI e design systems (Brad Frost, Dan Mall...) |
