@@ -5,8 +5,9 @@
 # Keywords em PT-BR primeiro (idioma do usuário), EN como fallback.
 
 meta:
-  version: "1.0.0"
-  total_squads: 14
+  version: "1.0.1"
+  total_squads: 14      # inclui marketing-squad, que NÃO acompanha este repositório
+  squads_in_repo: 13    # os squads distribuídos aqui (README: 13 squads, 177 agentes)
   # O comando de ativação corresponde ao nome da PASTA em ~/.claude/commands/.
   # Se um squad não estiver instalado, a rota fica indisponível: avise o usuário
   # e ofereça a alternativa mais próxima — nunca ative um comando inexistente.
@@ -67,6 +68,8 @@ domains:
     chief: marketing-chief
     command: "/marketing-squad:agents:marketing-chief"
     agents: 5
+    bundled: false   # NÃO acompanha este repositório — precisa ser instalado à parte
+    fallback: "Sem o marketing-squad instalado, use a cadeia lancamento_completo (brand → hormozi → copy → traffic → data) ou só o elo que cobrir o escopo."
     keywords: [campanha, campanha completa, marketing, plano de marketing, mensagem,
                ponta a ponta, mensagem + copy + criativo + tráfego, campanha integrada]
     description: "Campanha de ponta a ponta (mensagem → copy → criativo → tráfego) com time enxuto."
@@ -165,12 +168,16 @@ domains:
 
 # ---------------------------------------------------------------------------
 # Targets externos (não são squads Xquads, mas são destinos legítimos)
+# NENHUM deles acompanha este repositório: são sistemas separados. Só roteie
+# para eles se o comando existir em ~/.claude/commands/ — caso contrário, avise
+# o usuário e trate a demanda como fora do alcance do Xquads.
 # ---------------------------------------------------------------------------
 external_targets:
 
   software_development:
     target: raxos
     command: "/raxos"
+    bundled: false
     keywords: [código, implementar, bug, feature, refatorar, deploy, api, banco de dados,
                migration, supabase, next.js, react, componente funcional, teste, erro,
                não funciona, corrigir, criar tela, criar rota, integração técnica]
@@ -185,6 +192,7 @@ external_targets:
   squad_creation:
     target: squad-architect
     command: "/squad"
+    bundled: false
     keywords: [criar squad, novo squad, clonar mente, novo agente, time de especialistas,
                não existe squad para, quero um agente de]
     description: "Criar um squad ou agente novo quando nenhum squad existente cobre o domínio."
@@ -246,7 +254,7 @@ multi_squad_chains:
     trigger_keywords: [lançamento, lançar produto, lançar curso, launch completo]
     sequence: [brand-squad, hormozi-squad, copy-squad, traffic-masters, data-squad]
     handoff_notes: "Marca define a mensagem → Hormozi estrutura a oferta → Copy escreve → Traffic distribui → Data mede."
-    note: "Se o escopo for pequeno, prefira marketing-squad (já é integrado) em vez da cadeia inteira."
+    note: "Se o escopo for pequeno e o marketing-squad estiver instalado (não acompanha este repo), prefira ele à cadeia inteira."
 
   marca_nova:
     trigger_keywords: [criar marca do zero, nova marca, começar do zero]
@@ -262,6 +270,7 @@ multi_squad_chains:
     trigger_keywords: [criar app, criar plataforma, criar saas]
     sequence: [c-level-squad, design-squad, raxos]
     handoff_notes: "Estratégia/GTM → UX e design system → desenvolvimento no SDC."
+    note: "O último elo (raxos) é externo e não acompanha este repo — se não existir, entregue até o design e diga que o desenvolvimento está fora do alcance."
 
   turnaround_de_metrica:
     trigger_keywords: [caiu a conversão, piorou o resultado, métrica despencou]

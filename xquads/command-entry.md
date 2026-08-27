@@ -37,7 +37,7 @@ Ao receber a demanda, execute o workflow `wf-route-to-squad.yaml`:
 | Copy avançado, pitch, negociação | `/copy-master:agents:copy-master-chief` |
 | Tráfego pago, escala, tracking | `/traffic-masters:agents:traffic-chief` |
 | Marca, posicionamento, naming | `/brand-squad:agents:brand-chief` |
-| Campanha integrada | `/marketing-squad:agents:marketing-chief` |
+| Campanha integrada ⚠️ | `/marketing-squad:agents:marketing-chief` |
 | Oferta, preço, leads, vendas | `/hormozi-squad:agents:hormozi-chief` |
 | Narrativa, pitch, apresentação | `/storytelling:agents:story-chief` |
 | UX, UI, design system | `/design-squad:agents:design-chief` |
@@ -47,9 +47,11 @@ Ao receber a demanda, execute o workflow `wf-route-to-squad.yaml`:
 | Conselho estratégico | `/advisory-board:agents:board-chair` |
 | Movimento, tribo, causa | `/movement:agents:movement-chief` |
 | Claude Code, hooks, MCP | `/claude-code-mastery:agents:claude-mastery-chief` |
-| **Código / desenvolvimento** | `/raxos` — SDC obrigatório |
-| **Domínio sem squad** | `/squad` — cria um novo |
+| **Código / desenvolvimento** ⚠️ | `/raxos` — SDC obrigatório |
+| **Domínio sem squad** ⚠️ | `/squad` — cria um novo |
 
+> ⚠️ As três rotas marcadas NÃO acompanham este repositório (`marketing-squad`, `/raxos` e `/squad` são componentes separados).
+>
 > O chefe só consegue ativar squads que existam em `~/.claude/commands/`. Squad não instalado = rota indisponível: avise o usuário e ofereça a alternativa mais próxima, em vez de ativar um comando que não existe.
 
 ## Comandos
@@ -58,7 +60,7 @@ Ao receber a demanda, execute o workflow `wf-route-to-squad.yaml`:
 - `*diagnose` — só diagnostica, sem ativar
 - `*route-to {squad}` — pula o diagnóstico e ativa o squad informado
 - `*chain` — monta e executa cadeia multi-squad
-- `*squads` — lista os 14 squads
+- `*squads` — lista os squads instalados (13 acompanham este repo)
 - `*review` — valida a entrega devolvida
 - `*help` — mostra squads e domínios
 - `*exit` — encerra

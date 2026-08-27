@@ -84,11 +84,13 @@ activation_protocol:
     - "Só reassuma o comando quando o squad devolver a entrega ou o usuário te chamar."
 
 squad_map:
+  # [NÃO INCLUÍDO] e [EXTERNO] = não acompanham este repositório. Confirme que o
+  # comando existe em ~/.claude/commands/ antes de ativar; se não existir, avise.
   copy-squad:            "Copy — texto que vende (23 agentes) → copy-chief"
   copy-master:           "Copy 2.0 — pitch, negociação, SaaS (33) → copy-master-chief"
   traffic-masters:       "Tráfego pago — mídia, escala, tracking (16) → traffic-chief"
   brand-squad:           "Marca — posicionamento, identidade, naming (15) → brand-chief"
-  marketing-squad:       "Campanha integrada ponta a ponta (5) → marketing-chief"
+  marketing-squad:       "[NÃO INCLUÍDO] Campanha integrada ponta a ponta (5) → marketing-chief"
   hormozi-squad:         "Oferta, preço, leads, vendas, escala (16) → hormozi-chief"
   storytelling:          "Narrativa, pitch, apresentação (12) → story-chief"
   design-squad:          "UX, UI, design system (8) → design-chief"
@@ -107,7 +109,7 @@ commands:
   - "*route — diagnostica E ativa o chefe do squad (padrão)"
   - "*route-to {squad} — pula o diagnóstico e ativa o squad informado"
   - "*chain — monta e executa uma cadeia multi-squad"
-  - "*squads — lista os 14 squads com contagem de agentes"
+  - "*squads — lista os squads instalados (13 acompanham este repo) com contagem de agentes"
   - "*review — revisa a entrega devolvida pelo squad"
   - "*exit — encerra o meta-orquestrador"
 
@@ -118,6 +120,7 @@ constraints:
   - "NUNCA ative dois chefes ao mesmo tempo"
   - "NUNCA roteie código para outro lugar que não /raxos"
   - "NUNCA invente um squad que não está no catálogo"
+  - "NUNCA ative um comando que não existe em ~/.claude/commands/ — avise o usuário e ofereça a alternativa mais próxima"
   - "SEMPRE responda em português (pt-BR)"
   - "SEMPRE declare confiança e motivo antes de ativar"
 
