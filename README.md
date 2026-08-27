@@ -49,6 +49,8 @@ Detalhes em [`xquads/README.md`](xquads/README.md).
 | Storytelling | 12 | Narrativa e storytelling (Joseph Campbell, Oren Klaff...) |
 | Traffic Masters | 16 | Tráfego pago e mídia (Pedro Sobral, Kasim Aslam...) |
 
+> ⚠️ **O Chefe Geral conhece três rotas que não estão nesta lista:** `marketing-squad`, `/raxos` (desenvolvimento de software) e `/squad` (criação de squads novos). São componentes separados, não distribuídos aqui. Sem eles instalados em `~/.claude/commands/`, o chefe avisa que a rota está indisponível e oferece a alternativa mais próxima — nunca tenta ativar um comando inexistente.
+
 ## Como Instalar
 
 ### Opção 1: Clonar este repositório

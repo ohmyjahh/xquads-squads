@@ -43,7 +43,7 @@ Você descreve o problema
 | Copy avançado: pitch, negociação, SaaS | copy-master | copy-master-chief | 33 |
 | Tráfego pago, escala, tracking | traffic-masters | traffic-chief | 16 |
 | Marca, posicionamento, naming, identidade | brand-squad | brand-chief | 15 |
-| Campanha integrada ponta a ponta | marketing-squad | marketing-chief | 5 |
+| Campanha integrada ponta a ponta ⚠️ | marketing-squad | marketing-chief | 5 |
 | Oferta, preço, leads, vendas, escala | hormozi-squad | hormozi-chief | 16 |
 | Narrativa, pitch, apresentação, manifesto | storytelling | story-chief | 12 |
 | UX, UI, design system | design-squad | design-chief | 8 |
@@ -56,6 +56,8 @@ Você descreve o problema
 | **Código / desenvolvimento** | *(externo)* | `/raxos` — SDC obrigatório | — |
 | **Não existe squad pro domínio** | *(externo)* | `/squad` — cria um novo | — |
 
+> ⚠️ **Não acompanham este repositório.** `marketing-squad`, `/raxos` e `/squad` são componentes separados — este repo distribui 13 squads (177 agentes). Sem eles instalados, o chefe avisa que a rota está indisponível e oferece a alternativa mais próxima.
+
 ---
 
 ## Comandos
@@ -66,7 +68,7 @@ Você descreve o problema
 | `*diagnose` | Só diagnostica — mostra o squad recomendado sem ativar |
 | `*route-to {squad}` | Pula o diagnóstico e ativa o squad informado |
 | `*chain` | Monta e executa uma cadeia multi-squad |
-| `*squads` | Lista os 14 squads com contagem de agentes |
+| `*squads` | Lista os squads instalados (13 acompanham este repo) |
 | `*review` | Valida a entrega devolvida pelo squad |
 | `*help` | Mostra os squads e o que cada um resolve |
 
@@ -84,7 +86,7 @@ Quando a demanda atravessa domínios, o chefe monta uma cadeia e ativa **um elo 
 | Produto digital do zero | c-level → design → raxos |
 | Turnaround de métrica | data → traffic → copy |
 
-> Escopo pequeno de campanha? Ele prefere o **marketing-squad** (já integrado) à cadeia inteira.
+> Escopo pequeno de campanha? Ele prefere o **marketing-squad** (já integrado) à cadeia inteira — se estiver instalado (⚠️ não acompanha este repo).
 
 ---
 
@@ -134,7 +136,7 @@ Depois é só rodar `/xquads`. O chefe geral só consegue ativar os squads que v
 - **3 tasks** — diagnose, route, review
 - **1 workflow** — wf-route-to-squad (6 fases com gates e vetos)
 - **1 checklist** — output-quality (gate de roteamento, não de deliverable)
-- **1 data file** — routing-catalog (14 squads, 8 tie-breakers, 5 cadeias)
+- **1 data file** — routing-catalog (13 squads no repo + 1 opcional, 2 alvos externos, 8 tie-breakers, 5 cadeias)
 
 ## Requisitos
 

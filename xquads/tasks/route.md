@@ -74,7 +74,7 @@ Invoque a skill do chefe pelo comando do catálogo e entregue o briefing como pr
 | copy-master | `/copy-master:agents:copy-master-chief` |
 | traffic-masters | `/traffic-masters:agents:traffic-chief` |
 | brand-squad | `/brand-squad:agents:brand-chief` |
-| marketing-squad | `/marketing-squad:agents:marketing-chief` |
+| marketing-squad ⚠️ | `/marketing-squad:agents:marketing-chief` |
 | hormozi-squad | `/hormozi-squad:agents:hormozi-chief` |
 | storytelling | `/storytelling:agents:story-chief` |
 | design-squad | `/design-squad:agents:design-chief` |
@@ -84,8 +84,10 @@ Invoque a skill do chefe pelo comando do catálogo e entregue o briefing como pr
 | advisory-board | `/advisory-board:agents:board-chair` |
 | movement | `/movement:agents:movement-chief` |
 | claude-code-mastery | `/claude-code-mastery:agents:claude-mastery-chief` |
-| **raxos (código)** | `/raxos` |
-| **squad novo** | `/squad` |
+| **raxos (código)** ⚠️ | `/raxos` |
+| **squad novo** ⚠️ | `/squad` |
+
+> ⚠️ Não acompanham este repositório. Confirme que o comando existe em `~/.claude/commands/` antes de ativar — se não existir, avise o usuário e ofereça a alternativa mais próxima em vez de tentar.
 
 **Modo autônomo** — quando o usuário pediu o resultado pronto, sem querer conversar:
 

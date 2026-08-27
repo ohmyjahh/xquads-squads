@@ -70,6 +70,8 @@ routes_to:
     - squad: marketing-squad
       chief: marketing-chief
       command: "/marketing-squad:agents:marketing-chief"
+      bundled: false
+      note: "Não acompanha este repositório — instale à parte ou use a cadeia lancamento_completo."
     - squad: movement
       chief: movement-chief
       command: "/movement:agents:movement-chief"
@@ -83,10 +85,12 @@ routes_to:
     - squad: raxos
       chief: raxos
       command: "/raxos"
+      bundled: false
       note: "Desenvolvimento de software. Fluxo SDC obrigatório — não é squad Xquads."
     - squad: squad-architect
       chief: squad
       command: "/squad"
+      bundled: false
       note: "Criação de squads/agentes novos. Só quando não existe squad para o domínio."
 
 config:

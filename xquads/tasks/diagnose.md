@@ -71,7 +71,7 @@ Compare a demanda com `multi_squad_chains`. É cadeia quando:
 
 ⚠️ **Não invente cadeia.** Se o usuário pediu uma headline, ele quer uma headline — não um lançamento inteiro. Cadeia só quando o escopo pedido realmente exige.
 
-Se o escopo é de campanha mas pequeno, prefira **marketing-squad** (já integrado) à cadeia completa.
+Se o escopo é de campanha mas pequeno, prefira **marketing-squad** (já integrado) à cadeia completa — desde que esteja instalado; ele não acompanha este repositório.
 
 ---
 
@@ -79,7 +79,7 @@ Se o escopo é de campanha mas pequeno, prefira **marketing-squad** (já integra
 
 | Situação | Destino | Regra |
 |---|---|---|
-| Envolve escrever/alterar **código** | `/raxos` | SDC obrigatório. Nunca implemente. |
+| Envolve escrever/alterar **código** | `/raxos` ⚠️ | SDC obrigatório. Nunca implemente. Alvo externo: se `/raxos` não existir, diga que está fora do alcance. |
 | Configurar Claude Code, hooks, MCP, skills | `claude-code-mastery` | Não confundir com desenvolvimento de produto |
 | Não existe squad para o domínio | `/squad` | Ofereça criar o squad novo |
 | Usuário já disse o squad | pular para `route.md` | Não re-diagnostique o que já foi decidido |
