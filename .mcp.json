@@ -3,7 +3,8 @@
     "excel-agent": {
       "type": "stdio",
       "command": "C:\\Users\\erfon\\sv-excel-agent\\.venv\\Scripts\\python.exe",
-      "args": ["C:\\Users\\erfon\\sv-excel-agent\\excel_mcp\\excel_server.py"]
+      "args": ["-m", "excel_mcp.excel_server"],
+      "cwd": "C:\\Users\\erfon\\sv-excel-agent"
     }
   }
 }
