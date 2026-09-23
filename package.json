@@ -1,0 +1,12 @@
+{
+  "name": "xquads-squads",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Biblioteca de squads de agentes IA para Claude Code / Synkra AIOS",
+  "scripts": {
+    "validate": "node scripts/validate-squads.mjs"
+  },
+  "devDependencies": {
+    "js-yaml": "^4.1.0"
+  }
+}
